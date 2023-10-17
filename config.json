@@ -1,0 +1,9 @@
+{
+    "id": "YoloBitSoundPlayerExtention",
+    "extensionDisplay": {
+        "name": "gui.externalExtension.YoloBitSoundPlayerExtension.name",
+        "iconURL": "/images/poster_soundplayer.png",
+        "insetIconURL": "/images/poster_soundplayer.png",
+        "description": "gui.externalExtension.YoloBitSoundPlayerExtension.description"
+    }
+}
