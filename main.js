@@ -8,7 +8,7 @@ class Scratch3YoloBitSoundPlayer {
         return {
             id: 'YoloBitSoundPlayerExtention',
             parentMode: 'yoloBit',
-            name: 'YoloBitSoundPlayer',
+            name: 'SoundPlayer',
             blockIconURI: iconURL,
             color1: '#00a06b',
             color2: '#00a06b',
@@ -271,3 +271,4 @@ class Scratch3YoloBitSoundPlayer {
         }
     }
 }
+Scratch.extensions.register(new Scratch3YoloBitSoundPlayer());
