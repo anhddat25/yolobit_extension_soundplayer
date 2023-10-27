@@ -1,6 +1,5 @@
-const base64ImageURL = 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzZweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMzZweCIgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMiAzdjEwLjU1Yy0uNTktLjM0LTEuMjctLjU1LTItLjU1LTIuMjEgMC00IDEuNzktNCA0czEuNzkgNCA0IDQgNC0xLjc5IDQtNFY3aDRWM2gtNnoiLz48L3N2Zz4=';
+const iconURL = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzZweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMzZweCIgZmlsbD0iI0ZGRkZGRiI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xMiAzdjEwLjU1Yy0uNTktLjM0LTEuMjctLjU1LTItLjU1LTIuMjEgMC00IDEuNzktNCA0czEuNzkgNCA0IDQgNC0xLjc5IDQtNFY3aDRWM2gtNnoiLz48L3N2Zz4=';
 
-const iconURL = `data:image/svg+xml;base64,${base64ImageURL}`;
 
 // Core, Team, and Official extension classes should be registered statically with the Extension Manager.
 // See: scratch-vm/src/extension-support/extension-manager.js
@@ -11,11 +10,6 @@ class Scratch3YoloBitSoundPlayer {
             parentMode: 'yoloBit',
             name: 'YoloBitSoundPlayer',
             blockIconURI: iconURL,
-            allowBlockTypes: {
-                button_a_on_pressed_ab_button_b_on_pressed_ab: -1
-            },
-            // color1: '#0372c4',
-            // color2: '#048ef5',
             color1: '#00a06b',
             color2: '#00a06b',
 
@@ -47,7 +41,6 @@ class Scratch3YoloBitSoundPlayer {
                 {
                     opcode: 'soundplayer_actions',
                     rawCode: {
-                        // imports: 'from yolobit_sound_player import *\n',
                         code: 'sound.write(/*{ACTION}*/)'
                     },
                     text: [
@@ -66,7 +59,6 @@ class Scratch3YoloBitSoundPlayer {
                 {
                     opcode: 'soundplayer_playtrack',
                     rawCode: {
-                        // imports: 'from yolobit_sound_player import *\n',
                         code: 'sound.write(play_track(/*{VALUE}*/))'
                     },
                     text: [
@@ -86,7 +78,6 @@ class Scratch3YoloBitSoundPlayer {
                 {
                     opcode: 'soundplayer_set_volume',
                     rawCode: {
-                        // imports: 'from yolobit_sound_player import *\n',
                         code: 'sound.write(set_volume(/*{VALUE}*/))'
                     },
                     text: [
