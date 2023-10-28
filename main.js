@@ -41,7 +41,7 @@ class Scratch3YoloBitSoundPlayerExtention {
                 {
                     opcode: 'soundplayer_actions',
                     rawCode: {
-                        code: 'sound.write(/*{ACTION}*/)'
+                        code: 'sound.write(/*{ACTION}*/)\n'
                     },
                     text: [
                         {
@@ -59,7 +59,7 @@ class Scratch3YoloBitSoundPlayerExtention {
                 {
                     opcode: 'soundplayer_playtrack',
                     rawCode: {
-                        code: 'sound.write(play_track(/*{VALUE}*/))'
+                        code: 'sound.write(play_track(/*{VALUE}*/))\n'
                     },
                     text: [
                         {
@@ -82,7 +82,7 @@ class Scratch3YoloBitSoundPlayerExtention {
                     },
                     text: [
                         {
-                            default: 'mở âm lượng [VALUE] (0-30)',
+                            default: 'mở âm lượng [VALUE] (0-30)\n',
                             id: "gui.externalExtension.YoloBitSoundPlayerExtension.soundplayer_set_volume"
                         }
                     ],
